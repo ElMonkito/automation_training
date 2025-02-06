@@ -11,7 +11,7 @@ args = parser.parse_args()
 directory_path = Path(args.directory)
 
 if not directory_path.exists():
-    print(f"Directory {directory_path} does not exist")
+    print(f"Directory {directory_path} does not exist!")
     exit(1)
 
 for file_ in directory_path.iterdir():
